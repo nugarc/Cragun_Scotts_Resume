@@ -1,0 +1,283 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom{}
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule{} \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+%-----Custom commands-----
+%-------------------------
+
+%!!!! Do I need this?
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \normalsize#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+%----Format for job experience----
+\newcommand{\resumeExpSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} - \normalsize#2: \small #3 & \textbf{\small #4}
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-6pt}
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-11pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \vspace{-5pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}
+}
+
+%----Resume List Items----
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItem}[1]{ 
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+% --------------------------------BEGIN_DOCUMENT--------------------------------
+
+\begin{document}
+
+%-----------PERSONAL-INFO-----------
+\begin{center}
+    % name
+    \textbf{{\Huge  Cragun Scott}} \\ \vspace{1pt}
+    \large
+    % Contact Info
+    \raisebox{-0.1\height} (801)-458-2246 ~\vline ~
+    \href{mailto:nugarc@live.com}{ nugarc@live.com} ~\vline ~
+    \href{https://linkedin.com/in/Cragun-T-Scott}{ www.linkedin.com/in/Cragun-T-Scott} ~\vline ~
+    Ames, IA 50010 
+%    \href{https://github.com/}{\faGithub\ Your Username}
+    \\ \vspace{4pt}
+    % Title
+    {\huge	 \scshape Mechanical Engineer} 
+    \vspace{-12pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart{}
+    \resumeSubheading{B.S., Mechanical Engineering, with a Computer Science Minor}{December 2023}{Utah State University, Logan Ut}{USU GPA 3.72}
+    \begin{itemize}
+        \vspace{-1pt}
+        \item Maintained a 3.72 GPA while working a 15-30 hour a week job
+    \end{itemize}
+\resumeSubHeadingListEnd{}
+\vspace{-22pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certificates}
+    \resumeSubSubheading{Certified SolidWorks Associate (CSWA) }{Oct. 2019} 
+    \resumeSubSubheading{Fundamentals of Engineering (FE) Exam}{May 2023}
+    \vspace{-8pt}    
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart{}
+    \resumeExpSubheading{Parallel Computing Intern}{Los Alamos National Lab}{Los Alamos, NM}{June 2023—Aug. 2023}   %LANL
+    \resumeItemListStart{}
+        \resumeItem{Developed a new parallel computing algorithm using MPI interface and C++ to speed up heat transfer code.}
+        \resumeItem{Worked with a team to research, speed up, optimize, maintain, test, and run high-efficiency parallel C++ codes.}
+       % \resumeItem{Attended lectures and workshops to improve the speed and efficiency of code.} % Consider removing, since It does not help you
+    \resumeItemListEnd{}
+    
+    \resumeExpSubheading{Engineering Assistant}{Space Dynamics Laboratory}{North Logan, UT}{June 2021—May 2023}  %SDL  
+    \resumeItemListStart{}
+        \resumeItem{Cradle-to-grave experience leading 5 unique customer programs to successful completion in a fast-paced environment.}
+        \resumeItem{Ensured deliverables met customer's specifications by performing design, fabrication, and testing operations.}
+        \resumeItem{Worked with Engineers and quality assurance to ensure each program met requirements and finished on time. }
+        \resumeItem{Designed custom part drawings for each program. Utilized best drafting practices, GD\&T, and Document Control.}
+        %\resumeItem{Preformed tests utilizing Lakeshore and LabView Technology }
+        % \resumeItem{Produced custom products that met customers' design needs while working in a fast-paced environment.}
+        %\resumeItem{Cradle-to-grave experience leading 5 Thermal Strap programs. Performed design, fabrication, and testing operations.}
+        %\resumeItem{Lead the design, Fabrication, and testing of space satellite thermal hardware for internal and external customers.}
+        %\resumeItem{Worked with team members in a fast-paced environment to produce products to meet customers' needs.}
+        %\resumeItem{Developed testing procedures to ensure and test result reports.}
+        %\resumeItem{Gained and developed greater proficiency with Microsoft Excel, and Microsoft Word 3D CAD modeling skills.}
+        %\resumeItem{Assisted operations, testing, and maintenance in a research design lab for thermal straps and satellite thermal hardware.}
+    \resumeItemListEnd{}
+    
+    \resumeExpSubheading{Framer}{Farrell Brothers Construction}{ Plain City, UT}{May 2020— Aug 2020 \& March 2018—Aug. 2018}  %Framing
+      \resumeItemListStart{}
+        \resumeItem{Ensured all features called out in the blueprints were constructed as accurately as possible. }
+        \resumeItem{Framed 10+ residential homes with a team of 6. Ensured the best build quality by paying attention to detail.}
+        %\resumeItem{build phase was performed precisely and quickly.}
+        % \resumeItem{ Developed group communication and construction job site work skills. Learned to read and follow blueprints.}
+    \resumeItemListEnd{}
+
+    %\resumeExpSubheading{Resident Assistant}{Utah State University}{Logan, UT}{Aug. 2019—May 2020}  %RA
+      %\resumeItemListStart{}
+      %\resumeItem{Mentored provided resources, and planned programs for 30 residents.}
+    %\resumeItemListEnd{}
+    
+    \resumeExpSubheading{Assistant Maintenance}{Utah State University Student Center}{ Logan, UT}{Jan. 2019— June 2019}%TSC Maintenance
+      \resumeItemListStart{}
+        \resumeItem{Used problem-solving skills to fix and maintain HVAC units and other climate control systems.}
+        \resumeItem{Ensured preventative maintenance was conducted on time. Completed additional service request tickets.}
+        %\resumeItem{Learned how to fix and maintain HVAC units and other climate control systems.}
+        %\resumeItem{Developed problem-solving skills used to fix broken machinery.}
+    \resumeItemListEnd{}
+  \resumeSubHeadingListEnd{}
+\vspace{-18pt}  
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart{} 
+    \resumeProjectHeading{\textbf{USU Senior Design Capstone Project for Nucor Utah} \emph{}}{Aug. 2022—May 2023 }
+          \resumeItemListStart{}
+          %%% You don't need to explain the project, you need to explain what you did
+            \resumeItem{Developed a system to increase the safety and efficiency of workers entering and exiting railcars.}
+            %\resumeItem{Worked on a design team to build a cart to enter and exit rail cars in a shipping bay safely.}
+            \resumeItem{Worked with team members to conduct product definition, brainstorming, design, and analysis tasks.} % potentially modify to just be "Design process steps"
+            \resumeItem{Ensured the team was on track by creating and updating the GHANT chart, work tasks, and milestone lists.}   
+            \resumeItemListEnd{}
+            
+    \resumeProjectHeading{\textbf{Coding Projects}}{}
+          \resumeItemListStart{}
+            \resumeItem{Wrote and implemented Python code to accurately calculate aerodynamic forces on an airfoil and plane wing.}
+            %\resumeItem{Researched and implemented a new parallel algorithm to speed up a C++ simulation code at LANL.} %%%%%%%%%%% consider pulling this one, or moving it 
+            %\resumeItem{Refactored, designed, and implemented code for a complex number fractal image generator.}
+            \resumeItem{Developed Python code to analyze employment data from a large data log.}
+          \resumeItemListEnd{}
+          
+    \resumeProjectHeading{\textbf{3D CAD Modeling}}{}
+          \resumeItemListStart{}
+            \resumeItem{Onshape: Designed and produced drawings of a full-scale model of Nucor Safety cart for a senior Design project.}
+            \resumeItem{Solid Edge: Designed, produced, and oversaw manufacturing of Thermal Straps and fixturing for SDL Contracts.}
+            %\resumeItem{SolidWorks: Drafted an accurate assembly of a serve desk bell and reverse-engineered a push/pull toggle clamp.}
+          \resumeItemListEnd{}
+          
+    \resumeProjectHeading{\textbf{School Projects}}{}
+          \resumeItemListStart{}
+            \resumeItem{Worked on a machine design class team to design a gear reducer box for a final project.}
+            \resumeItem{Worked with an instrumentation design team to optimize the exit velocity of a potato cannon.}
+            \resumeItem{ Lead the planning, purchasing, and assembly of a pumpkin throwing trebuchet for USU ASME pumpkin toss.}
+            \resumeItem{Researched, designed, optimized, and wrote a proposal for a hybrid energy system for a renewable energy final project.}
+          \resumeItemListEnd{}
+    \resumeSubHeadingListEnd{}
+\vspace{-17pt}
+
+%-----------Technical Skills-----------
+\section{Technical Skills and Interests}
+    \resumeItemListStart{}
+        \resumeItem{Proficient with using Microsoft Word, Excel, and in 3D CAD with SolidWorks, Solid Edge, and Onshape.} \vspace{-4.5pt}
+        \resumeItem{Proficient in Python, Java, JavaScript, and C++ programming languages, and using git, and version control.} \vspace{-4.5pt}
+        \resumeItem{Proficient in proposal writing and oral presentation of design ideas and information.} \vspace{-4.5pt}
+        %\resumeItem{Experience with CS algorithm construction, and analysis, and proficiency in writing code documentation.} \vspace{-4.5pt}
+        \resumeItem{Experience with cleanroom environment, welding, metal machining, mill, lathe, and excavation equipment operation.} \vspace{-4.5pt}
+        %\resumeItem{Experience fixing and troubleshooting car problems: brakes, timing belts, water pumps, and general maintenance.} \vspace{-4.5pt}
+        \resumeItem{Interests in and taken courses on Aerodynamics, Control Systems, and Hybrid/Renewable Energy Systems.} \vspace{-4.5pt}
+    \resumeItemListEnd{}
+ 
+\vspace{-8pt}
+
+%------------Leadership and Achievements -----------
+\section{Leadership and Achievements }
+    \resumeSubHeadingListStart{}
+    \resumeProjectHeading{SDL Student Scholar Award – Space Dynamics Laboratory, North Logan, UT	}{Aug 2022}
+      \resumeItemListStart{}
+        \resumeItem{Received award for leading the design, assembly, and testing of a customer thermal strap program.}
+        \resumeItem{Prepared and presented a presentation about the program to company leaders.}
+      \resumeItemListEnd{}
+    \resumeProjectHeading{Volunteer – Non-profit Church Organization, Richmond, Va.}{Feb. 2016—March 2018}
+      \resumeItemListStart{}
+        \resumeItem{Developed strong work ethic by working 12 hours daily to achieve weekly goals.}
+        \resumeItem{Developed public and interpersonal communication skills and Led and trained groups of 8 volunteers.}
+      \resumeItemListEnd{}
+    \resumeProjectHeading{Eagle Scout - Ogden, UT}{Aug. 2014}
+      \resumeItemListStart{}
+        %\resumeItem{Led a group of volunteers in re-digging, and preserving a drainage trench for a non-profit farm.}
+      \resumeItemListEnd{}
+
+    \resumeSubHeadingListEnd{}
+\vspace{-16pt}
+
+\end{document}
